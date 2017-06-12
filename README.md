@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your `initializers/sorcery.rb`
+
+``` ruby
+# add :weixin provider
+config.external_provider = [..., :weixin]
+
+config.weixin.key = "" # appid
+config.weixin.secret = "" # appsecret
+config.weixin.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=weixin"
+config.weixin.user_info_mapping = {nickname: "nickname", gender: "sex", avatar_url: "headimgurl"}
+```
 
 ## Development
 
