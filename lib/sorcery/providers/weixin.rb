@@ -1,6 +1,8 @@
+require 'sorcery/providers/base'
+
 module Sorcery
   module Providers
-    # This class adds support for OAuth with open.wx.qq.com.
+    # This class adds support for OAuth with mp.weixin.qq.com.
     #
     #   config.weixin.key = <key>
     #   config.weixin.secret = <secret>
