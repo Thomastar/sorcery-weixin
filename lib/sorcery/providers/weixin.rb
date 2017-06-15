@@ -42,6 +42,7 @@ module Sorcery
         response = access_token.get(user_info_path, params: {
           access_token: access_token.token,
           openid: access_token.params['openid'],
+          lang: 'zh_CN',
         })
 
         {}.tap do |h|
